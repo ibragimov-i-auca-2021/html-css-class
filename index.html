@@ -2,34 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <style>
-    h1 {
-        text-align: center;
-    }
+  h1 {
+    text-align: center;
+  }
 
-    .mood {
-        display: flex;
-        justify-content: center;
+  .mood {
+    display: flex;
+    justify-content: center;
 
-    }
+  }
 
-    .something {
-        background-color: hsl(185, 62%, 52%);
-        border: 5px solid hsl(185, 32%, 41%);
-        color: rgb(16, 16, 16);
-        margin-left: 500px;
-        margin-right: 500px;
-        margin-bottom: 20px;
-        opacity: 0.8;
-        padding: 1%;
-        /* padding - это расстояние бортиков фигуры от текста */
-    }
+  .something {
+    background-color: hsl(185, 62%, 52%);
+    border: 5px solid hsl(185, 32%, 41%);
+    color: rgb(16, 16, 16);
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    padding: 1%;
+    /* padding - это расстояние бортиков фигуры от текста */
+  }
 
-    /* #lyricsEng {
+  /* #lyricsEng {
         background-color: rgb(167, 230, 241);
         padding-left: 3px;
         padding-right: 3px;
@@ -48,90 +48,101 @@
         border: 2px solid rgb(228, 192, 145);
 
     } */
-    .lyrics {
-        max-width: 800px; /* Максимальная ширина контейнера */
+  .lyrics {
+    max-width: 800px;
+    /* Максимальная ширина контейнера */
     margin: 0 auto;
-        background-color: hsl(185, 62%, 52%);
-        border: 5px solid hsl(185, 32%, 41%);
-        color: rgb(30, 31, 30);
-        opacity: 0.8;
-        padding: 1%;
-        margin: auto;
-        width: 45%; /* Adjust the width as needed */
-    }
+    background-color: hsl(185, 62%, 52%);
+    border: 5px solid hsl(185, 32%, 41%);
+    color: rgb(30, 31, 30);
+    opacity: 0.8;
+    padding: 1%;
+    margin: auto;
+    width: 45%;
+    /* Adjust the width as needed */
+  }
 
-    #lyricsEng {
-        color: rgba(37, 37, 37, 0.9);
-        border: 2px solid rgb(228, 192, 145);
-    }
+  #lyricsEng {
+    color: rgba(37, 37, 37, 0.9);
+    border: 2px solid rgb(228, 192, 145);
+  }
 
-    #lyricsRus {
-        color: rgba(37, 37, 37, 0.9);
-        border: 2px solid rgb(228, 192, 145);
-    }
+  #lyricsRus {
+    color: rgba(37, 37, 37, 0.9);
+    border: 2px solid rgb(228, 192, 145);
+  }
 
-    #contact {
-        display: inline block;
-        color: aquamarine;
-        background-color: hsl(185, 62%, 44%);
-        border: 2px solid hsl(185, 32%, 88%);
-        border-radius: 5px;
-        margin-top: 100px;
-        margin-right: 100px;
-        margin-bottom: 0;
-        padding: 10px;
-    }
+  #contact {
+    display: inline block;
+    color: aquamarine;
+    background-color: hsl(185, 62%, 44%);
+    border: 2px solid hsl(185, 32%, 88%);
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-right: 1200px;
+    margin-bottom: 0;
+    padding: 10px;
+  }
 
-    #feedback {
-        position: fixed;
-        color: rgb(83, 81, 77);
-        top: 10px;
-        right: 10px;
+  #feedback {
+    position: fixed;
+    color: rgb(83, 81, 77);
+    top: 10px;
+    right: 10px;
 
-    }
+  }
 
-    #button {
-        display: inline-block;
-        /*background-color: #333;
+  #button {
+    display: inline-block;
+    /*background-color: #333;
     color: #fff;
     padding: 10px 15px;
     margin-top: 10px;
     margin-right: 10px;
     border: none; */
-        border-radius: 5px;
-        text-align: center;
-    }
+    border-radius: 5px;
+    text-align: center;
+  }
 
-    #button:hover {
-        background-color: #eb1d1d;
-        cursor: pointer;
-        /* Hand icon when hovering over the button */
-    }
+  #button:hover {
+    background-color: #eb1d1d;
+    cursor: pointer;
+    /* Hand icon when hovering over the button */
+  }
 
-    .inlineText {
-        display: inline;
-    }
-    pre
-    {
-        word-wrap: break-word;
-    }
+  .inlineText {
+    display: inline;
+    
+  }
+
+  pre {
+    word-wrap: break-word;
+  }
+  .Home
+  {
+    right: 10px;
+  }
+  .Home2
+  {
+
+  }
 </style>
 
 <body>
-    <a class="inlineText" href="#contact">Check the contacts </a>
-    <h1 class="something">
-        English and Russian lyrics
-    </h1>
-    <h1>
-        "Baby" - Song by Justin Bieber feats Ludacris
+  <a class="inlineText" href="#contact">Check the contacts </a>
+  <h1 class="something" id="Home2">
+    English and Russian lyrics
+  </h1>
+  <h1>
+    "Baby" - Song by Justin Bieber feats Ludacris
 
-    </h1>
-    <a class="inlineText" id="feedback" href="mailto:ibragimov_i@auca.kg">Send Feedback</a>
-    <div class="mood">
+  </h1>
+  <a class="inlineText" id="feedback" href="mailto:ibragimov_i@auca.kg">Send Feedback</a>
+  <div class="mood">
 
-        <div class="lyrics" id="lyricsEng">
-            
-            <pre>
+    <div class="lyrics" id="lyricsEng">
+
+      <pre>
                 [Intro: Justin Bieber]
 Oh, woah-oh-oh-oh-oh
 Oh, woah-oh-oh-oh, oh
@@ -212,10 +223,10 @@ Now I'm all gone (Yeah-yeah-yeah, yeah-yeah-yeah)
 Now I'm all gone (Yeah-yeah-yeah, yeah-yeah-yeah)
 Now I'm all gone (Gone, gone, gone, gone), I'm gone
             </pre>
-        </div>
-        <div class="lyrics" id="lyricsRus">
-            
-            <pre>
+    </div>
+    <div class="lyrics" id="lyricsRus">
+
+      <pre>
                 [Интро: Джастин Бибер]
 Оу, уоу-оу-оу-оу
 Оу, уоу-оу-оу, оу
@@ -297,11 +308,14 @@ NF
 
      
             </pre>
-        </div>
     </div>
+  </div>
 
+<a class="inlineText">
 
-    <h2><a id="contact" id="button" href="mailto:karabas_barabas@bred.ru"> Contact me </a></h2>
+  <h2><a id="contact" id="button" href="mailto:karabas_barabas@bred.ru"> Contact me </a>
+  <a href ="#Home2" > Home</a></h2>
+</a>
 </body>
 
 </html>
