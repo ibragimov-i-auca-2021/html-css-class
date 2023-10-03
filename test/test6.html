@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* only the divs inside the article will have a yellow background */
+    article div {
+      background-color: yellow;
+      font-size: 60px;
+    }
+
+    /* all tags with the "highlight" class will have a green background */
+    article .highlight {
+      background-color: green;
+      font-size: 60px;
+    }
+
+    /* only the article with the "highlight" class will have blue background */
+    article.highlight {
+      background-color: blue;
+      font-size: 60px;
+    }
+
+    /* all buttons inside articles will have a thick 10px dashed border */
+    article button {
+      font-size: 40px;
+      border: 10px dashed red;
+    }
+          
+    /* all divs inside articles will have a thin 2px dashed border */    
+    /* and all buttons will have a thin 2px dashed border */        
+    article div, button {
+      font-size: 20px;
+      border: 2px dashed red;
+    }
+    
+    button {
+      box-shadow: 10px 10px 10px grey;
+      font-size: 10px;
+    }
+    
+    /* please note, that the "article button" has a higher specificity (hence higher priority) than the "button" selector alone */
+  </style>
+</head>
+<body>
+  <article>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, autem.\
+    <div>
+      <span class="highlight">span – Green background.</span>
+      <div class="highlight">div – Green background.</div>
+      <button class="highlight">button – Green background & thick 10px dashed border.</button>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus illum reiciendis, possimus sequi assumenda fugit rem numquam quia autem omnis?
+    </div>
+    <button class="articeButton">thick 10px dashed border</button>
+  </article>
+  <div>This will have non yellow background</div>
+  <button>BUTTON</button>
+
+  <article class="highlight">
+    <div>
+      <span class="highlight">Green background</span>
+      <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus illum reiciendis, possimus sequi assumenda fugit rem numquam quia autem omnis? -->
+    </div>
+    <button class="articeButton">thick 10px dashed border</button>
+    <p>Blue background</p>
+  </article>
+  <div>Lorem ipsum dolor sit amet.</div>
+  <button>BUTTON</button>  
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    article.highLight { 
+        /* <article class="highLight" */
+        background-color: darkblue;
+    }
+    /* article .highLight {
+        background-color: darkblue;
+    } */
+
+    article div {
+        background-color: rebeccapurple;
+        font-size: 40px;
+    }
+
+    article button {
+        font-size: 40px;
+    }
+    div, span, pre
+    {
+        border: 2px solid green;
+
+    }
+    .padding
+    {
+        padding: 20px;
+    }
+    .margin
+    {
+        margin: 30px;
+    }
+    /* div
+    {
+        display: inline;
+    } */
+    .outline
+    {
+        /* outline: 30px; */
+    }
+</style>
+
+<body>
+    <article>
+        <div>
+            <!-- <span> this will be selected </span> -->
+            <span class="highLight"> this will be selected </span>
+        </div>
+        <button>
+            Go going
+        </button>
+        <!-- in div, we may not use "," between classes -->
+        <div class="padding margin outline"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto quas a praesentium consectetur vitae velit
+            blanditiis aspernatur dicta eaque tempore fugit, quasi expedita repellendus, animi vero fuga dolorem
+            cupiditate commodi?
+
+        </div>
+    </article>
+    <article>
+        <button>
+            Go go
+        </button>
+    </article>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Ut necessitatibus dolor animi ab.</div>
+    <div>Unde corrupti placeat temporibus eaque.</div>
+    <div>Voluptatum minima illum iste vero?</div>
+    <div>Laudantium esse maiores quis cumque.</div>
+    <!-- div*5>Lorem5 -->
+    <span>Lorem ipsum dolor sit amet.</span><span class="margin outline">Ratione autem error maiores exercitationem?</span><span>Vero aut sapiente eius architecto?</span><span>Laboriosam ab unde quasi voluptatibus.</span><span>Ab voluptas non in quis.</span>
+    <!-- span, inline не управляется по вертикали, работают только по горизонтали -->
+    <!-- margin не применяется в inline, span элементах -->
+    <!-- <pre>
+        Lorem ipsum dolor sit amet.
+        Vero atque beatae optio fugiat?
+        Sequi quas illum consequatur veniam?
+        Quam harum alias ullam earum?
+        Iste vero ratione nulla accusamus.
+    </pre> -->
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .toggle
+    {
+        border: 1px solid red;
+        padding: 10px;
+        width: 500px;
+        cursor: pointer;
+        background-color: aqua;
+    }
+    .panel
+    {
+        display: none;
+    }
+
+</style>
+<body>
+    <div class="toggle" onclick="brother()"> Click to show some info</div>
+    <div class="panel" id="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, molestias.</div>
+</body>
+<script>
+  function brother()
+    {
+        // document.getElementById("panel").style.display = "block";
+        if (document.getElementById("panel").style.display == "block")
+        {
+            document.getElementById("panel").style.display = "none"
+        }
+        else 
+        {
+            document.getElementById("panel").style.display = "block"
+        }
+    }
+
+</script>
+</html>
