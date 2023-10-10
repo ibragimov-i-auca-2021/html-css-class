@@ -3,43 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FlexBox</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        main
+        {
+            display:flex;
+            /* flex - по высоте расставит елементы как inline */
+            flex-direction: column;
+            /* меняет главную ось: с горизонтальной на вертикальную */
+            justify-content:space-between;
+            /* space - between
+                space-evenly
+                space-around
+            */
+            /* justify-content:flex-end; */
+            /* flex-start - слева
+                flex-end - справа
+                переводит вдоль главной Оси
+                */
+            /* height: 400px; */
+            align-items: center;
+            /* используется сразу на все подзаголовки */
+            border: 1px dotted grey
+            
+           
+        } 
+
+        div, span
+        {
+            width: 700px;
+            display: block;
+            border: 1px dotted grey
+
+        }
+        .item
+        {
+            align-self: flex-end;
+            /* перпендикулярно главной оси */
+            /* переводит текст по оси Х, вверх и вниз */
+        }
+
+
+        </style>
 </head>
-<style>
-    .toggle
-    {
-        border: 1px solid red;
-        padding: 10px;
-        width: 500px;
-        cursor: pointer;
-        background-color: aqua;
-    }
-    #panel
-    {
-        display: visability;
-    }
-
-</style>
 <body>
-    <div class="toggle">
-        <pre class="toggle" onclick="brother()"> Click to show some info</pre>
-    </div>
-    <div id="panel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, molestias.</div>
+<main>
+    <div class="content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, voluptates.</div>
+    <div class="content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repudiandae eum, perspiciatis veritatis, doloremque consequatur minus vitae provident deleniti veniam et accusamus dolore qui dicta corporis dignissimos praesentium labore similique tempora iure! Voluptatem mollitia enim iste repellendus vero obcaecati, voluptas ratione quia fugit nam quae dolores accusamus deserunt harum beatae..</div>
+    <span class="content"> Lorem ipsum dolor sit amet.</span>
+    <div class="content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, voluptates.</div>
+    <div class="content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, voluptates.</div>
+    <div class="content "> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, voluptates.</div>
+</main>
+    
 </body>
-<script>
-  function brother()
-    {
-        // document.getElementById("panel").style.display = "block";
-        if (document.getElementById("panel").style.display === "block")
-        {
-            document.getElementById("panel").style.display = "none"
-        }
-        else 
-        {
-            document.getElementById("panel").style.display = "block"
-        }
-        document.getElementById("panel").style.display = "none";
-    }
-
-</script>
 </html>
