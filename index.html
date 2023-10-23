@@ -23,7 +23,7 @@
   header {
     padding: 5px;
     display: flex;
-    background-color: brown;
+    background-color: rgb(91, 47, 7);
     justify-content: space-between;
     position: absolute;
     width: 100%;
@@ -62,7 +62,7 @@
   }
 
   section.hero {
-    background: linear-gradient(to bottom, #761d09, #442f00);
+    background: linear-gradient(to bottom, hsl(30, 80%, 50%), #422e04);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -92,15 +92,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #9eac9b;
     /* height: 100vh; */
   }
 
   button {
     /* display: block; */
-    background-color: #8c6a21;
+    background-color: #a36a2c;
     border-radius: 15px;
     border: #442f00;
-    color: black;
+    color: #9eac9b;
     font-size: 60px;
     text-align: center;
     justify-content: center;
@@ -118,13 +119,15 @@
 
   div.benefit {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: stretch; */
     padding-top: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 90px;
     padding-left: 150px;
     padding-right: 150px;
-    gap: 200px;
+    /* gap: 70px; */
+
   }
 
   div {
@@ -132,12 +135,13 @@
   }
 
   h2 {
+    color: #b1b9b2;
     background-color: #ad7328;
     display: block;
     font-size: 50px;
     text-align: center;
     /* margin-top: 20px; */
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     padding: 50px;
   }
 
@@ -153,7 +157,7 @@
 
   .reverse {
     text-align: right;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     background-color: #844d1d;
   }
 
@@ -161,18 +165,35 @@
     /* margin-bottom: 30px; */
     text-align: center;
     font-size: 70px;
+    flex-direction: column;
   }
-  
+
 
   .reverse h3 {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     text-align: right;
   }
-  div.head{
+
+  div.head {
+    /* display: flex; */
+    /* height: 100%; */
     text-align: center;
+    color: #c8d0c9;
   }
-  div.head h3{
-    font-size: 80px;
+
+  div.head h3 {
+    font-size: 140px;
+  }
+
+  oneHeight {
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+    align-items: center;
+  }
+
+  .left {
+    text-align: left;
   }
 </style>
 
@@ -249,6 +270,7 @@
   <section class="hero">
 
     <div class="hero">
+
       <svg height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -321,112 +343,126 @@
   <section class="benefits">
     <h2>
       Какие выберешь ты? </h2>
-      <div class="head">
-        <h3>Rolex</h3>
-      </head>
-    <div style="width:100%;" class="benefit">
-      <svg style="width: 1200px; height: 100%;" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        aria-hidden="true" role="img" class="iconify iconify--twemoji" preserveAspectRatio="xMidYMid meet"
-        fill="#000000">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <path fill="#D32D27" d="M31 27a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h18a4 4 0 0 1 4 4v18z"></path>
-          <path fill="#FFF" d="M25 16.063h-5v-5h-4v5h-5V20h5v5.063h4V20h5z"></path>
-        </g>
-      </svg>
-      <div style="width: 95%;font-size: 32px;text-align: left;">
-        <!-- <h3>Rolex</h3> -->
-        Rolex – воплощение вечного великолепия и надежности. Эти иконы швейцарского часового искусства с легкостью
-        пересекают временные границы, подчеркивая ваш стиль и статус. Каждые Rolex – это результат безупречной
-        мастерской и страсти к совершенству, которые сделали их символом элегантности и успеха.
-      </div>
-    </div>
-    <div class="benefit reverse">
+    <div class="head">
 
-      <svg height="500px" width="700px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <path style="fill:#41479B;"
-            d="M473.655,88.276H38.345C17.167,88.276,0,105.443,0,126.621V385.38 c0,21.177,17.167,38.345,38.345,38.345h435.31c21.177,0,38.345-17.167,38.345-38.345V126.621 C512,105.443,494.833,88.276,473.655,88.276z">
-          </path>
-          <path style="fill:#F5F5F5;"
-            d="M511.469,120.282c-3.022-18.159-18.797-32.007-37.814-32.007h-9.977l-163.54,107.147V88.276h-88.276 v107.147L48.322,88.276h-9.977c-19.017,0-34.792,13.847-37.814,32.007l139.778,91.58H0v88.276h140.309L0.531,391.717 c3.022,18.159,18.797,32.007,37.814,32.007h9.977l163.54-107.147v107.147h88.276V316.577l163.54,107.147h9.977 c19.017,0,34.792-13.847,37.814-32.007l-139.778-91.58H512v-88.276H371.691L511.469,120.282z">
-          </path>
-          <g>
-            <polygon style="fill:#FF4B55;"
-              points="282.483,88.276 229.517,88.276 229.517,229.517 0,229.517 0,282.483 229.517,282.483 229.517,423.724 282.483,423.724 282.483,282.483 512,282.483 512,229.517 282.483,229.517 ">
-            </polygon>
-            <path style="fill:#FF4B55;"
-              d="M24.793,421.252l186.583-121.114h-32.428L9.224,410.31 C13.377,415.157,18.714,418.955,24.793,421.252z">
-            </path>
-            <path style="fill:#FF4B55;"
-              d="M346.388,300.138H313.96l180.716,117.305c5.057-3.321,9.277-7.807,12.287-13.075L346.388,300.138z"></path>
-            <path style="fill:#FF4B55;"
-              d="M4.049,109.475l157.73,102.387h32.428L15.475,95.842C10.676,99.414,6.749,104.084,4.049,109.475z"></path>
-            <path style="fill:#FF4B55;"
-              d="M332.566,211.862l170.035-110.375c-4.199-4.831-9.578-8.607-15.699-10.86L300.138,211.862H332.566z">
-            </path>
-          </g>
-        </g>
-      </svg>
-      <div style="width: 70%;">
+      <div style="width:100%;" class="benefit">
+
+        <h3>Rolex</h3>
+        <oneHeight class="left">
+
+          <svg style=" width: 80%; height: 100%;" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji"
+            preserveAspectRatio="xMidYMid meet" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill="#D32D27" d="M31 27a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h18a4 4 0 0 1 4 4v18z"></path>
+              <path fill="#FFF" d="M25 16.063h-5v-5h-4v5h-5V20h5v5.063h4V20h5z"></path>
+            </g>
+          </svg>
+          <div style="width: 100%; font-size: 30px; ">
+            <!-- <h3>Rolex</h3> -->
+            Rolex – воплощение вечного великолепия и надежности. Эти иконы швейцарского часового искусства с легкостью
+            пересекают временные границы, подчеркивая ваш стиль и статус. Каждые Rolex – это результат безупречной
+            мастерской и страсти к совершенству, которые сделали их символом элегантности и успеха.
+          </div>
+        </oneHeight>
+
+
+      </div>
+      <div class="benefit reverse">
+
         <h3>Bremont</h3>
-        Bremont - это британская марка часов, объединяющая в себе страсть к авиации и выдающийся мастерство часового
-        искусства. Часы Bremont являются исключительными по своей точности, надежности и стилю. Они созданы с
-        использованием инновационных материалов и технологий, а также вдохновлены историей авиации и морской навигации.
-        Bremont - это символ выдающегося качества и приключенческого духа, который сопровождает вас в любых условиях и
-        приключениях.
+        <oneHeight style="flex-direction:row-reverse ;">
+          <svg height="500px" width="700px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path style="fill:#41479B;"
+                d="M473.655,88.276H38.345C17.167,88.276,0,105.443,0,126.621V385.38 c0,21.177,17.167,38.345,38.345,38.345h435.31c21.177,0,38.345-17.167,38.345-38.345V126.621 C512,105.443,494.833,88.276,473.655,88.276z">
+              </path>
+              <path style="fill:#F5F5F5;"
+                d="M511.469,120.282c-3.022-18.159-18.797-32.007-37.814-32.007h-9.977l-163.54,107.147V88.276h-88.276 v107.147L48.322,88.276h-9.977c-19.017,0-34.792,13.847-37.814,32.007l139.778,91.58H0v88.276h140.309L0.531,391.717 c3.022,18.159,18.797,32.007,37.814,32.007h9.977l163.54-107.147v107.147h88.276V316.577l163.54,107.147h9.977 c19.017,0,34.792-13.847,37.814-32.007l-139.778-91.58H512v-88.276H371.691L511.469,120.282z">
+              </path>
+              <g>
+                <polygon style="fill:#FF4B55;"
+                  points="282.483,88.276 229.517,88.276 229.517,229.517 0,229.517 0,282.483 229.517,282.483 229.517,423.724 282.483,423.724 282.483,282.483 512,282.483 512,229.517 282.483,229.517 ">
+                </polygon>
+                <path style="fill:#FF4B55;"
+                  d="M24.793,421.252l186.583-121.114h-32.428L9.224,410.31 C13.377,415.157,18.714,418.955,24.793,421.252z">
+                </path>
+                <path style="fill:#FF4B55;"
+                  d="M346.388,300.138H313.96l180.716,117.305c5.057-3.321,9.277-7.807,12.287-13.075L346.388,300.138z">
+                </path>
+                <path style="fill:#FF4B55;"
+                  d="M4.049,109.475l157.73,102.387h32.428L15.475,95.842C10.676,99.414,6.749,104.084,4.049,109.475z">
+                </path>
+                <path style="fill:#FF4B55;"
+                  d="M332.566,211.862l170.035-110.375c-4.199-4.831-9.578-8.607-15.699-10.86L300.138,211.862H332.566z">
+                </path>
+              </g>
+            </g>
+          </svg>
+          <div style="width: 70%;">
+            Bremont - это британская марка часов, объединяющая в себе страсть к авиации и выдающийся мастерство часового
+            искусства. Часы Bremont являются исключительными по своей точности, надежности и стилю. Они созданы с
+            использованием инновационных материалов и технологий, а также вдохновлены историей авиации и морской
+            навигации.
+            Bremont - это символ выдающегося качества и приключенческого духа, который сопровождает вас в любых условиях
+            и
+            приключениях.
+        </oneHeight>
       </div>
     </div>
     <div class="benefit">
-      <svg style="width: 700px; height: 500px;" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji"
-        preserveAspectRatio="xMidYMid meet" fill="#000000">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <path fill="#CE2B37" d="M36 27a4 4 0 0 1-4 4h-8V5h8a4 4 0 0 1 4 4v18z"></path>
-          <path fill="#009246" d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"></path>
-          <path fill="#EEE" d="M12 5h12v26H12z"></path>
-        </g>
-      </svg>
-      <div style="width: 70%;">
-        <h3>Armani</h3>
-        Часы Armani - это икона стиля и элегантности. Бренд Giorgio Armani создает часы, которые сочетают в себе
-        исключительный дизайн и выдающееся качество. Они отражают современную роскошь и минимализм, делая каждый момент
-        особенным. Часы Armani - это не просто аксессуар, это символ статуса и вкуса, который подчеркивает вашу
-        индивидуальность и утонченность.
+      <h3>Armani</h3>
+      <oneHeight class="left">
 
-
-
-
-
-      </div>
+        <svg style="width: 700px; height: 500px;" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji"
+          preserveAspectRatio="xMidYMid meet" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path fill="#CE2B37" d="M36 27a4 4 0 0 1-4 4h-8V5h8a4 4 0 0 1 4 4v18z"></path>
+            <path fill="#009246" d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"></path>
+            <path fill="#EEE" d="M12 5h12v26H12z"></path>
+          </g>
+        </svg>
+        <div style="width: 70%; ">
+          Часы Armani - это икона стиля и элегантности. Бренд Giorgio Armani создает часы, которые сочетают в себе
+          исключительный дизайн и выдающееся качество. Они отражают современную роскошь и минимализм, делая каждый
+          момент
+          особенным. Часы Armani - это не просто аксессуар, это символ статуса и вкуса, который подчеркивает вашу
+          индивидуальность и утонченность.
+        </div>
+      </oneHeight>
     </div>
     <div class="benefit reverse">
+      <h3>Chris Benz</h3>
+      <oneHeight style="flex-direction: row-reverse;">
 
-      <svg style="width: 700px; height: 500px;" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji"
-        preserveAspectRatio="xMidYMid meet" fill="#000000">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <path fill="#FFCD05" d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-4H0v4z"></path>
-          <path fill="#ED1F24" d="M0 14h36v9H0z"></path>
-          <path fill="#141414" d="M32 5H4a4 4 0 0 0-4 4v5h36V9a4 4 0 0 0-4-4z"></path>
-        </g>
-      </svg>
-      <div style="width: 70%;">
-        <h3>Chris Benz</h3>
-        Chris Benz - это немецкий бренд часов, специализирующийся на производстве высококачественных часов для водных
-        видов спорта. Часы Chris Benz известны своей надежностью и функциональностью, что делает их популярными среди
-        подводных и водных спортсменов, а также любителей активного отдыха. Бренд известен своим стильным дизайном и
-        инновационными технологиями, которые делают их часы идеальными для экстремальных условий и под водой. Chris Benz
-        - это символ качества и надежности для тех, кто ищет надежные часы для приключений в мире водных видов спорта.
-      </div>
+        <svg style="width: 700px; height: 500px;" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--twemoji"
+          preserveAspectRatio="xMidYMid meet" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path fill="#FFCD05" d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-4H0v4z"></path>
+            <path fill="#ED1F24" d="M0 14h36v9H0z"></path>
+            <path fill="#141414" d="M32 5H4a4 4 0 0 0-4 4v5h36V9a4 4 0 0 0-4-4z"></path>
+          </g>
+        </svg>
+        <div style="width: 70%;">
+          Chris Benz - это немецкий бренд часов, специализирующийся на производстве высококачественных часов для водных
+          видов спорта. Часы Chris Benz известны своей надежностью и функциональностью, что делает их популярными среди
+          подводных и водных спортсменов, а также любителей активного отдыха. Бренд известен своим стильным дизайном и
+          инновационными технологиями, которые делают их часы идеальными для экстремальных условий и под водой. Chris
+          Benz
+          - это символ качества и надежности для тех, кто ищет надежные часы для приключений в мире водных видов спорта.
+        </div>
+      </oneHeight>
 
   </section>
 </body>
